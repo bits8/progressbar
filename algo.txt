@@ -1,0 +1,35 @@
+=======================
+==== 	DATE 	=======
+=======================
+
+Bugun = 05.07.2017
+BaslangicTarihi = 01.07.2017
+BitisTarihi = 02.07.2017
+ToplamYuzde = 100
+ToplamGunSayisi = BitisTarihi - BaslangicTarihi
+GunlukEklenecekDeger = ToplamYuzde/ToplamGunSayisi
+GunSayisi = 3
+IslemYuzdesi = Gunsayisi * GunlukEklenecekDeger
+ProgressbarinMaximumGenlislikDegeri = (javascript ile hesaplanacak)
+ProgressbarinYuzdeDegeri = IslemYuzdesi * ProgressbarinMaximumGenlislikDegeri / 100
+
+
+=======================
+====	VALUE   =======
+=======================
+
+Deger  = 105
+Toplam = 1000
+ProgressbarinYuzdeDegeri = (Deger  / Toplam) * 100 
+
+
+
+
+
+
+
+
+
+
+
+

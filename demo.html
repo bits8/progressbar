@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>bits8.progressbar</title>
+  <style>
+    html,
+    body {
+      font-family: Verdana, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .progressbar {
+      width: 500px;
+      border: 1px solid #ccc!important;
+      display:block;
+    }
+
+    .progress {
+      width: 0;
+      background: #4CAF50;
+      padding: 8px 16px!important;
+      color: white;
+      text-align: center;
+      min-height: 24px;
+      line-height: 24px;
+      -webkit-transition: width 1s ease-in-out;
+      -moz-transition: width 1s ease-in-out;
+      -o-transition: width 1s ease-in-out;
+      transition: width 1s ease-in-out;
+    }
+
+    h2{
+      margin-bottom:4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>bits8.progressbar</h1>
+
+  <!-- Date progressbar -->
+  <h2>Date based progressbar</h2>
+  <div class="progressbar">
+    <div class="progress" data-start="01.07.2017" data-end="15.07.2017"></div>
+  </div>
+
+  <br>
+
+  <!-- Value progressbar -->
+  <h2>Value based progressbar</h2>
+  <div class="progressbar">
+    <div class="progress" data-value="105" data-total="1000"></div>
+  </div>
+
+
+  <br>
+
+  <!-- Value progressbar -->
+  <h2>Text disabled progressbar</h2>
+  <div class="progressbar">
+    <div class="progress" data-text="false" data-value="2485" data-total="5488"></div>
+  </div>
+
+
+  <script src="jquery-1.12.4.min.js"></script>
+  <script src="bits8.progressbar.js"></script>
+  <script>
+    $(function () {
+      $(".progress").bits8progressbar();
+    });
+  </script>
+</body>
+
+</html>
